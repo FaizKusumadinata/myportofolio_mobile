@@ -7,9 +7,9 @@ class MyHomePage extends StatelessWidget {
   final String kelas = "PBP E";
 
   final List<ItemHomepage> items = [
-    ItemHomepage("Lihat Proyek", Icons.folder, Colors.blue),
-    ItemHomepage("Tambah Proyek", Icons.add_circle, Colors.blueAccent),
-    ItemHomepage("Logout", Icons.logout, Colors.blueGrey),
+    ItemHomepage("View Artwork", Icons.photo_size_select_actual_rounded, Color.fromARGB(255, 233, 21, 39)),
+    ItemHomepage("View Projects", Icons.work, Color.fromARGB(255, 172, 15, 28)),
+    ItemHomepage("View Experience", Icons.workspace_premium, Color.fromARGB(255, 126, 11, 20)),
   ];
 
 
@@ -23,10 +23,10 @@ class MyHomePage extends StatelessWidget {
           'MyPortfolio',
           style: TextStyle(
             color: Colors.white,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w700,
           ),
         ),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Colors.red,
       ),
       // Body halaman utama dengan padding di sekelilingnya.
       body: Padding(
@@ -53,9 +53,10 @@ class MyHomePage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 16.0),
                     child: Text(
-                      'Selamat datang di MyPortfolio Mobile!',
+                      'Welcome To MyPortfolio Mobile!',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.white,
                         fontSize: 18.0,
                       ),
                     ),
@@ -100,15 +101,16 @@ class InfoCard extends StatelessWidget {
         // Menyesuaikan lebar kartu dengan proporsi layar (dibagi 3.5).
         width: MediaQuery.of(context).size.width / 3.5,
         padding: const EdgeInsets.all(16.0),
+        color: Colors.red,
         // Menyusun teks title dan content secara vertikal.
         child: Column(
           children: [
             Text(
               title,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
             ),
             const SizedBox(height: 8.0),
-            Text(content),
+            Text(content, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
           ],
         ),
       ),
@@ -153,7 +155,7 @@ class ItemCard extends StatelessWidget {
               children: [
                 Icon(
                   item.icon,
-                  color: Colors.white,
+                  color: Colors.red,
                   size: 30.0,
                 ),
                 const Padding(padding: EdgeInsets.all(3)),
