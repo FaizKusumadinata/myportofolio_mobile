@@ -23,4 +23,10 @@ samples, guidance on mobile development, and a full API reference.
 
 2. Terdapat lima widget yang digunakan pada aplikasi ini, yakni MyApp, MyHomePage, InfoCard, ItemHomePage, dan ItemCard. Widget yang menjadi root adalah widget MyApp. MyHomePage merupakan widget yang menampilkan widget-widget lain. InfoCard merupakan card stateless yang hanya menyimpan info yang sudah dituliskan pada kode. ItemHomePage merupakan container dinamis untuk menyimpan deret kartu yang berisi ItemCard.
 
-3. 
+3. Widget MaterialApp umum digunakan sebagai widget root karena dengan widget tersebut, developer dapat menggunakan widget-widget yang sudah disediakan Flutter SDK, seperti StatelessWidget, StatefulWidget, AppBar, dan Scaffold.
+
+4. Stateless widget adalah widget yang hanya dapat berubah mengikuti perubahan yang dialami oleh widget parentnya, sedangkan  Stateful Widget dapat berubah dengan sendirinya. Stateless widget digunakan ketika diperlukan widget yang bersifat statis sedangkan Stateful widget digunakan ketika diperlukan widget yang bersifat lebih dinamis.
+
+5. BuildContext merupakan class yang dapat digunakan ketika ingin memberikan data dari sebuah widget parent kepada widget anaknya.
+
+6. Hot reload akan meload ulang perubahan kode dan membangun ulang tree widget, tetapi tidak menjalankan ulang main() sehingga kondisi aplikasi terjaga, sedangkan hot restart meload ulang semuanya, termasuk main(). Hot restart juga akan mengembalikan state dari sebuah widget ke state defaultnya jika statenya telah diubah sebelum di restart. Hot reload dilakukan ketika kode yang diubah berada diluar main(), sedangkan hot restart dilakukan ketika terdapat kode pada main() yang diubah.
