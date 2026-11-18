@@ -30,3 +30,7 @@ samples, guidance on mobile development, and a full API reference.
 5. BuildContext merupakan class yang dapat digunakan ketika ingin memberikan data dari sebuah widget parent kepada widget anaknya.
 
 6. Hot reload akan meload ulang perubahan kode dan membangun ulang tree widget, tetapi tidak menjalankan ulang main() sehingga kondisi aplikasi terjaga, sedangkan hot restart meload ulang semuanya, termasuk main(). Hot restart juga akan mengembalikan state dari sebuah widget ke state defaultnya jika statenya telah diubah sebelum di restart. Hot reload dilakukan ketika kode yang diubah berada diluar main(), sedangkan hot restart dilakukan ketika terdapat kode pada main() yang diubah.
+
+### Tugas 8
+
+1. 
