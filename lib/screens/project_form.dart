@@ -44,6 +44,8 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
             decoration: InputDecoration(
               hintText: "Nama Proyek",
               labelText: "Nama Proyek",
+              hintStyle: TextStyle(color: Colors.white),
+              labelStyle: TextStyle(color: Colors.white),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(5.0)),
             ),
             onChanged: (String? value){
@@ -68,6 +70,8 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
               decoration: InputDecoration(
                 hintText: "Deskripsi Proyek",
                 labelText: "Deskripsi Proyek",
+                hintStyle: TextStyle(color: Colors.white),
+                labelStyle: TextStyle(color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(5.0),
                 ),
@@ -93,6 +97,7 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: "Kategori Proyek",
+                labelStyle: TextStyle(color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(5.0),
                 ),
@@ -120,6 +125,8 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
               decoration: InputDecoration(
                 hintText: "Contoh: Flutter, Django, Figma",
                 labelText: "Teknologi yang Digunakan",
+                hintStyle: TextStyle(color: Colors.white),
+                labelStyle: TextStyle(color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(5.0),
                 ),
@@ -140,6 +147,8 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
               decoration: InputDecoration(
                 hintText: "URL Proyek (opsional)",
                 labelText: "Tautan Proyek",
+                hintStyle: TextStyle(color: Colors.white),
+                labelStyle: TextStyle(color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(5.0),
                 ),

@@ -31,6 +31,18 @@ samples, guidance on mobile development, and a full API reference.
 
 6. Hot reload akan meload ulang perubahan kode dan membangun ulang tree widget, tetapi tidak menjalankan ulang main() sehingga kondisi aplikasi terjaga, sedangkan hot restart meload ulang semuanya, termasuk main(). Hot restart juga akan mengembalikan state dari sebuah widget ke state defaultnya jika statenya telah diubah sebelum di restart. Hot reload dilakukan ketika kode yang diubah berada diluar main(), sedangkan hot restart dilakukan ketika terdapat kode pada main() yang diubah.
 
+AI DISCLOSURE.
+Pengerjaan tugas 7 ini tidak menggunakan AI apapun dan sumber yang digunakan adalah Tutorial 9 dari situs PBP, dokumentasi resmi Flutter, dan StackOverflow.
+
 ### Tugas 8
 
-1. 
+1. Metode Navigator.push() menambahkan route baru ke dalam stack routing Navigator, Navigator.pushReplacement() menghapus sebuah route dari tampilan pengguna dan menampilkan route lain, dan Navigator.pop() menghapus route teratas dari stack routing. Membuka formulir dari kartu aksi dilakukan menggunakan Navigator.push(). Adapun opsi Home pada drawer menggunakan Navigator.pushReplacement() untuk menghapus route dan menggantinya dengan routing ke laman Home.
+
+2. Scaffold, AppBar, dan Drawer membantu menjaga struktur halaman tetap konsisten dengan menyediakan bagian-bagian aplikasi yang dapat digunakan ulang oleh laman-laman yang berbeda-beda, sehingga memberikan tampilan yang konsisten. Sebagai contoh, pada aplikasi myportofolio, tersedia warna primer dan sekunder pada main.dart yang dapat digunakan kembali oleh laman-laman lain.
+
+3. Tata letak tersebut dipilih karena merupakan tata letak yang memberi kemudahan pengguna ketika membaca dan mengisi informasi pada formulir. Adapun widget pengatur jarak dan penggulir berguna untuk mengantisipasi perubahan layar pengguna. Kedua widget tersebut memastikan tampilan tetap tampak rapi dan dapat digunakan meskipun ukuran tampilan berubah.
+
+4. Method validate() merupakan method yang digunakan untuk memanggil fungsi validator() pada kelas FormState yang berguna untuk menvalidasi setiap input pada formulir. Adapun GlobalKey<FormState> merupakan key unique yang dimiliki oleh sebuah elemen dan dapat menentukan akses elemen-elemen lain ke elemen tersebut.
+
+AI DISCLOSURE.
+Pengerjaan tugas 8 ini tidak menggunakan AI apapun dan sumber yang digunakan adalah Tutorial 9 dari situs PBP, dokumentasi resmi Flutter, dan StackOverflow.
